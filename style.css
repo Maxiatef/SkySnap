@@ -1,0 +1,135 @@
+body {
+    background-color: #1e1e2f; /* Darker background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #ccc; /* Subtle text color */
+}
+
+#weather-container {
+    background-color: rgba(30, 30, 47, 0.9); /* Darker semi-transparent container */
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+    text-align: center;
+}
+
+h1,
+label,
+p {
+    color: #e0e0e0; /* Light text color for better contrast */
+    margin: 8px 0;
+}
+
+input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #2a2a3e; /* Darker input background */
+    color: #e0e0e0; /* Light input text color */
+    outline: none; /* Removes the default focus outline */
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(100, 100, 200, 0.8); /* Subtle blue glow effect */
+}
+
+button {
+    background: #5246a1; /* Darker button background */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+    font-size: 15px;
+    transition: background 0.5s ease;
+}
+
+button:hover {
+    background: #6b5ebf; /* Slightly lighter button on hover */
+}
+
+#temp-div p {
+    font-size: 50px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+#weather-info {
+    font-size: 20px;
+    color: #e0e0e0; /* Light text */
+}
+
+#weather-icon {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px;
+    margin-bottom: 0;
+    display: none;
+}
+
+#hourly-forecast {
+    margin-top: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    color: #e0e0e0; /* Light text */
+}
+
+.hourly-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+#hourly-heading {
+    color: #e0e0e0; /* Light text */
+    margin-top: 10px;
+}
+
+/* Scrollbar styles for WebKit browsers */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the vertical scrollbar */
+    height: 8px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3); /* Light semi-transparent white */
+    border-radius: 10px; /* Makes the scrollbar thumb rounded */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5); /* Slightly brighter on hover */
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(30, 30, 47, 0.8); /* Matches container background */
+    border-radius: 10px; /* Matches the thumb's rounded style */
+}
+
+/* Styling for Firefox */
+html {
+    scrollbar-color: rgba(255, 255, 255, 0.3) rgba(30, 30, 47, 0.8); /* Thumb and track colors */
+    scrollbar-width: thin; /* Makes the scrollbar thinner */
+}
