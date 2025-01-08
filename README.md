@@ -6,4 +6,4 @@ A sleek, responsive web app that provides real-time weather updates and a 5-day 
 - **Dynamic animations**
 - **Accurate weather data** powered by the OpenWeatherMap API.
 
-<video src="Media/2025-01-08 17-52-05.mp4" controls width="500"></video>
+[Watch Demo Video](https://drive.google.com/file/d/17z_juveHG-H-o3oaUI-P-RtEEAunsBnA/view?usp=sharing)
